@@ -11,7 +11,7 @@ script:
 language: generic  
 
 after_success:
-  - docker build -t  aaysenur/multi_client ./client
+  - docker build -t aaysenur/multi_client ./client
   - docker build -t aaysenur/multi_nginx ./nginx
   - docker build -t aaysenur/multi_server ./server 
   - docker build -t aaysenur/multi_worker ./worker 
